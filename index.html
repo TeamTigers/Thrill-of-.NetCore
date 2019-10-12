@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,35 +11,76 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.11/css/perfect-scrollbar.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/zenburn.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-    
+
 </head>
 
 <body>
 
-<div class="bg indigo z-depth-1"></div>
-<div class="bg indigo bottom z-depth-1">
-  <div class="indicator">
-    <div class="curr-page">0</div>
-    <div class="seperator">/</div>
-    <div class="total-page">0</div>
-  </div>
-</div>
-<div class="main-container container white z-depth-1">
-  <div class="slide title-slide indigo">
-    <div class="title-banner amber z-depth-1 darken-2">
-      <h2 class="title black-text" style="font-family: 'Acme', sans-serif;">Welcome to Thrill of <span class="purple-text purple-text-4">.NET Core</span></h2>
-      <div class="subtitle" style="font-family: 'Overpass', sans-serif;">
-        An easy guidline to start coding in .NET Core 
-      </div>
+  <div class="bg indigo z-depth-1"></div>
+  <div class="bg indigo bottom z-depth-1">
+    <div class="indicator">
+      <div class="curr-page">0</div>
+      <div class="seperator">/</div>
+      <div class="total-page">0</div>
     </div>
   </div>
+  <div class="main-container container white z-depth-1">
+
+
+    <!--  Presentation page  -->
+
+    <div class="slide title-slide blue-grey darken-4">
+      <div class="title-banner white z-depth-1 darken-2">
+        <h2 class="title black-text" style="font-family: 'Acme', sans-serif;">Welcome to Thrill of <span
+            class="purple-text purple-text-4">.NET Core</span></h2>
+        <div class="subtitle purple-text text-darken-4" style="font-family: 'Overpass', sans-serif;">
+          An easy guidline to start coding in .NET Core
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Self introduction  -->
+
+    <div class="row slide content-slide">
+      <div class="col s12">
+        <h2 class="center-align">Introduction</h2>
+      </div>
+      <div class="col s12 l6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Shunjid Rahman Showrov</span>
+            <p>22 Batch</p>
+            <p>Department of Software Engineering</p>
+            <span>
+              <a href=""><i class="fa fa-facebook-official"></i></a>
+              <a href=""><i class="fa fa-github"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Zubayer Himel</span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--  Table of contents  -->
+
   <div class="slide content-slide">
-    <h3 class="heading">Table of contents</h3>
-    <ol>
+    <h3 class="heading indigo-text indigo-darken-4">Table of contents</h3>
+    <ul>
       <li>Installing environment in VSCode</li>
       <li>Understanding project structure</li>
       <li>How HTTP requests work</li>
@@ -49,10 +90,14 @@
       <li>Scaffolding from the .NET Command Line Interface</li>
       <li>Working with NuGet packages from CLI</li>
       <li>Asynchronous programming</li>
-    </ol>
+    </ul>
   </div>
+
+
+  <!--  Installing environment in VSCode  -->
+
   <div class="row slide content-slide">
-    <div class="col s12"> 
+    <div class="col s12">
       <h2 class="heading">Structure</h2>
     </div>
     <div class="col s12 l6">
@@ -63,8 +108,10 @@
       <h4>How do I create a Slide</h4>
     </div>
     <div class="col s12 l6">
-      <p>Every Slide must be a child of the <code>.main-container</code>. Each slide is at least 100% tall, but can get taller (then you can just simply scroll down). </p>
-      <p>There are different kind of slides. To create a simple content slide with padding (like this one), use the class <code>.content-slide</code> like this:</p>
+      <p>Every Slide must be a child of the <code>.main-container</code>. Each slide is at least 100% tall, but can
+        get taller (then you can just simply scroll down). </p>
+      <p>There are different kind of slides. To create a simple content slide with padding (like this one), use the
+        class <code>.content-slide</code> like this:</p>
       <p>Alternatively you can style them completely yourself.</p>
     </div>
     <div class="col s12 l6">
@@ -80,7 +127,7 @@
     </div>
     <div class="col s12 l6">
       <h4>Previous slide</h4>
-      <ul> 
+      <ul>
         <li>Pressing <span class="key-list-up"></span></li>
         <li>Scrolling upwards beyond the slide start</li>
         <li>pressing the "up" button (orange, top right)</li>
@@ -88,7 +135,7 @@
     </div>
     <div class="col s12 l6">
       <h4>Next slide</h4>
-      <ul> 
+      <ul>
         <li>Pressing <span class="key-list-down"></span></li>
         <li>Scrolling down beyond the slide end</li>
         <li>pressing the "down" button (orange, bottom right)</li>
@@ -96,12 +143,17 @@
     </div>
     <div class="col s12 margin-top">
       <h4>Number keys</h4>
-      <p>You can also press the numbers 1 to 9 with one being the first, nine being the ninth (and zero being the tenth slide). </p>
-      <p class="grey-text text-darken-1"> <b>Additional info:<br></b>If you have n slides each number key k > n will scroll to page n instead of k. For example if you have only 4 pages, pressing 5 will bring you to page 4 (because 5 doesn't exist).</p>
+      <p>You can also press the numbers 1 to 9 with one being the first, nine being the ninth (and zero being the
+        tenth slide). </p>
+      <p class="grey-text text-darken-1"> <b>Additional info:<br></b>If you have n slides each number key k > n will
+        scroll to page n instead of k. For example if you have only 4 pages, pressing 5 will bring you to page 4
+        (because 5 doesn't exist).</p>
     </div>
     <div class="col s12 margin-top">
       <h4>Scrolling in long slides or small displays</h4>
-      <p>If the slide is larger than the display area, you either have to trim some fat or bite the bullet and scroll down while presentating... But be careful! if you scroll past the bottom of the slide you will be taken to the next slide.</p>
+      <p>If the slide is larger than the display area, you either have to trim some fat or bite the bullet and scroll
+        down while presentating... But be careful! if you scroll past the bottom of the slide you will be taken to the
+        next slide.</p>
     </div>
   </div>
   <div class="row slide content-slide">
@@ -124,18 +176,20 @@
           <td><a href="https://design.google.com/icons/" target="_blank">Googles Material-Icons webfont</a></td>
           <td>Lots of useful UI icons</td>
           <td>
-            <pre><code class="html">&lt;i class="material-icons">send&lt;/i></code></pre>Result: <i class="material-icons">send</i>
+            <pre><code class="html">&lt;i class="material-icons">send&lt;/i></code></pre>Result: <i
+              class="material-icons">send</i>
           </td>
         </tr>
         <tr>
           <td> <a href="https://highlightjs.org/" target="_blank">Highlight.js</a></td>
           <td>Highlight code snippets</td>
-          <td>each &lt;pre>&lt;code>...&lt;/code>&lt;/pre> gets highlighted automatically. Additionally each code segment inside a paragraph (&lt;p>) gets inline highlighted.</td>
+          <td>each &lt;pre>&lt;code>...&lt;/code>&lt;/pre> gets highlighted automatically. Additionally each code
+            segment inside a paragraph (&lt;p>) gets inline highlighted.</td>
         </tr>
         <tr>
           <td> <a href="https://underscorejs.org/" target="_blank">Underscore.js</a></td>
           <td>Javascript library with lots of usefull functions</td>
-          <td> 
+          <td>
             <pre><code>// square all numbers in an arrayvar squares = _.map([1, 2, 3], function (num) {
   return num * num;
 })
@@ -217,19 +271,22 @@ and/or modify it under the terms of the Do What The Fuck You Want
 To Public License, Version 2, as published by Sam Hocevar. 
 See <a href="http://www.wtfpl.net/" target="_blank">http://www.wtfpl.net/</a> for more details.</pre>
   </div>
-</div>
-<div class="fixed-action-btn up-btn"><a class="btn-floating btn-large amber waves-effect"><i class="material-icons large">keyboard_arrow_up</i></a></div>
-<div class="fixed-action-btn down-btn"><a class="btn-floating btn-large amber waves-effect"><i class="material-icons large">keyboard_arrow_down</i></a></div>
+  </div>
+  <div class="fixed-action-btn up-btn"><a class="btn-floating btn-large amber waves-effect"><i
+        class="material-icons large">keyboard_arrow_up</i></a></div>
+  <div class="fixed-action-btn down-btn"><a class="btn-floating btn-large amber waves-effect"><i
+        class="material-icons large">keyboard_arrow_down</i></a></div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.11/js/min/perfect-scrollbar.jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js'></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.11/js/min/perfect-scrollbar.jquery.min.js'></script>
 
-  
 
-    <script  src="js/index.js"></script>
+
+  <script src="js/index.js"></script>
 
 
 
