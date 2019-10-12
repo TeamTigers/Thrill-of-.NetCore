@@ -1,0 +1,193 @@
+.bg {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+.bg.bottom {
+  bottom: 0;
+  top: auto;
+}
+.bg .indicator {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+}
+@media (max-width: 992px) {
+  .bg .indicator {
+    margin-bottom: -40px;
+  }
+}
+.bg .indicator .curr-page,
+.bg .indicator .total-page {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+.bg .indicator .seperator {
+  display: inline-block;
+  margin: 0 -10px;
+}
+html {
+  background: #3e3e3e;
+}
+.main-container {
+  position: relative;
+  margin: 64px auto;
+  padding: 0;
+  height: calc(100vh - 128px);
+  overflow: hidden;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: justify;
+  font-weight: 400;
+}
+.main-container p {
+  margin-bottom: 0.75rem;
+}
+.main-container p + p {
+  margin-top: 24px;
+}
+.main-container h1,
+.main-container h2,
+.main-container h3,
+.main-container h4 {
+  font-weight: 300;
+}
+.main-container h1 img,
+.main-container h2 img,
+.main-container h3 img,
+.main-container h4 img {
+  height: 0.8em;
+  margin-bottom: -0.05em;
+}
+.main-container h5 {
+  font-weight: 500;
+}
+.main-container pre {
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  tab-size: 2;
+  margin: 8px 0;
+}
+.main-container ol,
+.main-container ol li,
+.main-container ul,
+.main-container ul li {
+  list-style: initial;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+.main-container ol,
+.main-container ul {
+  padding-left: 4rem;
+}
+.main-container ol,
+.main-container ol li {
+  list-style-type: decimal;
+}
+.main-container .slide {
+  min-height: 100%;
+  margin-bottom: 0px;
+}
+.main-container .slide:not(:nth-last-child(3)) {
+  margin-bottom: 30px;
+}
+.main-container .slide .heading {
+  border-bottom: 2px dotted #ddd;
+}
+.main-container .margin-top {
+  margin-top: 36px;
+}
+.main-container .margin-bottom {
+  margin-bottom: 36px;
+}
+.fixed-action-btn i {
+  font-size: 3em;
+}
+.up-btn {
+  top: 4px;
+  bottom: auto;
+}
+.ps-scrollbar-y-rail {
+  display: none !important;
+}
+.monospace {
+  font-family: monospace;
+}
+p code.hljs {
+  display: inline-block;
+  padding: 0 8px;
+  margin: 0;
+  margin-bottom: -7px;
+}
+thead {
+  font-weight: bold;
+}
+.slide.content-slide {
+  padding: 16px 36px 36px 36px;
+}
+.title-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.title-slide .title-banner {
+  text-align: center;
+  padding: 48px 24px;
+  color: #fff;
+  transform: rotate(-10deg);
+  width: 90%;
+}
+.subtitle {
+  opacity: 0.8;
+  font-size: 1.4rem;
+}
+pre code.html,
+pre code.xml {
+  border-radius: 3px;
+}
+pre code.html:before,
+pre code.xml:before {
+  display: block;
+  content: "HTML:";
+  padding: 4px 16px;
+  margin: -0.5em -0.5em 8px -0.5em;
+  background: #545454;
+  color: rgba(255, 255, 255, 0.8);
+}
+pre code.javascript {
+  border-radius: 3px;
+}
+pre code.javascript:before {
+  display: block;
+  content: "JavaScript:";
+  padding: 4px 16px;
+  margin: -0.5em -0.5em 8px -0.5em;
+  background: #545454;
+  color: rgba(255, 255, 255, 0.8);
+}
+pre code.css {
+  border-radius: 3px;
+}
+pre code.css:before {
+  display: block;
+  content: "CSS:";
+  padding: 4px 16px;
+  margin: -0.5em -0.5em 8px -0.5em;
+  background: #545454;
+  color: rgba(255, 255, 255, 0.8);
+}
+table.code-table td:last-child {
+  font-family: monospace;
+  color: #ad0d0d;
+}
+table.code-table td:first-child {
+  font-family: monospace;
+}
