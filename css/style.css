@@ -56,6 +56,7 @@ html {
 .main-container h1,
 .main-container h2,
 .main-container h3,
+.main-container h4
 .main-container h4 {
   font-weight: 300;
 }
@@ -67,7 +68,7 @@ html {
   margin-bottom: -0.05em;
 }
 .main-container h5 {
-  font-weight: 500;
+  font-weight: 400;
 }
 .main-container pre {
   overflow-y: hidden;
@@ -80,7 +81,7 @@ html {
 .main-container ul,
 .main-container ul li {
   list-style: initial;
-  font-size: 1.1em;
+  font-size: 17px;
   line-height: 1.6em;
 }
 .main-container ol,
