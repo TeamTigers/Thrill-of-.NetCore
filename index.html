@@ -190,21 +190,81 @@
     <!--  Data annotation -->
 
     <div class="row slide content-slide">
-        <div class="col s12">
-          <h3 class="heading indigo-text text-darken-4">Data annotation</h3>
-        </div>
-        <div class="col s12">
-          <h5 class="orange-text text-darken-3">What is Data Annotation?</h5>
-          <p> Data annotations are nothing but certain validations that we put in our models to validate the input from
-              the user. ASP.NET MVC provides a unique feature in which we can validate the models using Data annotation
-              attribute. Import the following namespace to use data annotation in the application.
-              <code>System.ComponentModel.DataAnnotations</code> It is very easy to use and the code becomes much cleaner as compared to normal ASP.NET validators.<br>
-          </p>
-          <h5 class="orange-text text-darken-3">Types of data annotation</h5>
-          <p></p>
+      <div class="col s12">
+        <h3 class="heading indigo-text text-darken-4">Data annotation</h3>
+      </div>
+      <div class="col s12">
+        <h5 class="orange-text text-darken-3">What is Data Annotation?</h5>
+        <p> Data annotations are nothing but certain validations that we put in our models to validate the input from
+          the user. ASP.NET MVC provides a unique feature in which we can validate the models using Data annotation
+          attribute. Import the following namespace to use data annotation in the application.
+          <code>System.ComponentModel.DataAnnotations</code> It is very easy to use and the code becomes much cleaner as
+          compared to normal ASP.NET validators.<br>
+        </p>
+        <h5 class="orange-text text-darken-3">Types of data annotation</h5>
+        <div class="col-s12">
+          <table class="highlight centered code-table">
+            <thead>
+              <tr>
+                <th>Data annotation</th>
+                <th>Description</th>
+                <th>Syntax</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="red-text">Required</td>
+                <td class="teal-text">This attribute specifies that the value is mandatory and cannot be skipped.</td>
+                <td class="brown-text">[Required(ErrorMessage="Please enter name"),MaxLength(30)]</td>
+              </tr>
+              <tr>
+                <td class="red-text">DataType</td>
+                <td class="teal-text">This attribute is used to specify the datatype of the model.</td>
+                <td class="brown-text">[DataType(DataType.Text)]</td>
+              </tr>
+              <tr>
+                <td class="red-text">Range</td>
+                <td class="teal-text">Using this attribute we can set a range between two numbers.</td>
+                <td class="brown-text">[Range(100,500,ErrorMessage="Please enter correct value")]</td>
+              </tr>
+              <tr>
+                <td class="red-text">StringLength</td>
+                <td class="teal-text">Using this attribute we can specify maximum and minimum length of the property.</td>
+                <td class="brown-text">[StringLength(30,ErrorMessage="Do not enter more than 30 characters")]</td>
+              </tr>
+              <tr>
+                <td class="red-text">DisplayName</td>
+                <td class="teal-text">Using this attribute we can specify property name to be displayed on view.</td>
+                <td class="brown-text">[Display(Name="Student Name")]</td>
+              </tr>
+              <tr>
+                <td class="red-text">MaxLength</td>
+                <td class="teal-text">Using this attribute we can specify maximum length of property.</td>
+                <td class="brown-text">[MaxLength(3)]</td>
+              </tr>
+              <tr>
+                <td class="red-text">Bind</td>
+                <td class="teal-text">This attribute specify fields to include or exclude for model binding.</td>
+                <td class="brown-text">[Bind(Exclude = "StudentID")]</td>
+              </tr>
+              <tr>
+                <td class="red-text">DisplayFormat</td>
+                <td class="teal-text">This attribute allows us to set date in the format specified as per the attribute.</td>
+                <td class="brown-text">[DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}")]</td>
+              </tr>
+              <tr>
+                <td class="red-text">RegularExpression</td>
+                <td class="teal-text">We can set a regex pattern for the property. For ex: Email ID.</td>
+                <td class="brown-text">[RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]</td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
-  
+    </div>
+
 
 
 
