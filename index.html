@@ -33,7 +33,6 @@
   </div>
   <div class="main-container container white z-depth-1">
 
-
     <!--  Presentation page  -->
 
     <div class="slide title-slide blue-grey darken-4">
@@ -94,7 +93,6 @@
     </div>
 
 
-
     <!--  Table of contents  -->
 
     <div class="slide content-slide">
@@ -103,7 +101,7 @@
         <li>Installing environment in VSCode</li>
         <li>Understanding project structure</li>
         <li>How HTTP requests work</li>
-        <li>How MVC is working on the browswer</li>
+        <li>How MVC is working on the browser</li>
         <li>Creating models</li>
         <li>Understanding data annotations</li>
         <li>Scaffolding from the .NET Command Line Interface</li>
@@ -122,27 +120,31 @@
       <div class="col s12">
         <h5 class="orange-text text-darken-3">Download VSCode</h5>
         <p>Visual Studio Code (VSCode) is a source code editor developed by Microsoft for Windows, Linux, macOS.
-          It is free to download. You can download it from its official website. <a href="https://code.visualstudio.com/">Download Link</a>
+          It is free to download. You can download it from its official website. <a
+            href="https://code.visualstudio.com/" target="_blank">Download Link</a>
         </p><br>
         <h5 class="orange-text text-darken-3">Setup extension in VSCode</h5>
-        <p>After successful installation click on <i class="material-icons">widgets</i> this icon from the left bar or simply 
-        press <code>Ctrl+Shift+X</code> to go to extensions. In search bar type <strong>C#</strong> and an extension will appear.
-        Install that extension. This extension will provide the following features inside VSCode -
-        <ul>
-          <li>Lightweight development tools for .NET Core</li>
-          <li>Great C# editing support including Syntax Highlighting, IntelliSense, Go to Definition, Find All References etc.</li>
-          <li>Debugging support for .NET Core (CoreCLR)</li>
-          <li>Support for project.json and csproj projects on Windows, Linux and macOS</li>
-        </ul><br>
-        You can also install another extension named as <strong>C# Extension</strong>. It will provide extensions to the IDE that will hopefully speed up your development workflow.
-        Now you are good to go. 
-       </p>
+        <p>After successful installation click on <i class="material-icons">widgets</i> this icon from the left bar or
+          simply
+          press <code>Ctrl+Shift+X</code> to go to extensions. In search bar type <strong>C#</strong> and an extension
+          will appear.
+          Install that extension. This extension will provide the following features inside VSCode -
+          <ul>
+            <li>Lightweight development tools for .NET Core</li>
+            <li>Great C# editing support including Syntax Highlighting, IntelliSense, Go to Definition, Find All
+              References etc.</li>
+            <li>Debugging support for .NET Core (CoreCLR)</li>
+            <li>Support for project.json and csproj projects on Windows, Linux and macOS</li>
+          </ul><br>
+          You can also install another extension named as <strong>C# Extension</strong>. It will provide extensions to
+          the IDE that will hopefully speed up your development workflow.
+          Now you are good to go.
+        </p>
       </div>
     </div>
 
 
-
-     <!--  Project structure   -->
+    <!--  Project structure   -->
 
     <div class="row slide content-slide">
       <div class="col s12">
@@ -151,92 +153,66 @@
       <div class="col s12">
         <h5 class="orange-text text-darken-3">Create a Project</h5>
         <p>Open the terminal from the folder or directory in which you want to create the project.
-          Lets say you want to create a project named musicPlayer. The following commnad will create a 
+          Lets say you want to create a project named musicPlayer. The following commnad will create a
           project for you. <code>dotnet new mvc -o musicPlayer</code> Then you need to change your directory to
-          that project and open it in VSCode. After opening the project you will see a notification on the right 
-          bottom corner. Click on <strong>Yes</strong> button. 
+          that project and open it in VSCode. After opening the project you will see a notification on the right
+          bottom corner. Click on <strong>Yes</strong> button.
+        </p>
+        <h5 class="orange-text text-darken-3">Project structure</h5>
+        <p>
+          <ul>
+            <li>.csproj file</li>
+            <li>Model</li>
+            <li>View</li>
+            <li>Controller</li>
+            <li>wwwroot</li>
+          </ul>
         </p>
       </div>
-      <div class="col s12 l6">
-        <h4>Next slide</h4>
-        <ul>
-          <li>Pressing <span class="key-list-down"></span></li>
-          <li>Scrolling down beyond the slide end</li>
-          <li>pressing the "down" button (orange, bottom right)</li>
-        </ul>
-      </div>
-      <div class="col s12 margin-top">
-        <h4>Number keys</h4>
-        <p>You can also press the numbers 1 to 9 with one being the first, nine being the ninth (and zero being the
-          tenth slide). </p>
-        <p class="grey-text text-darken-1"> <b>Additional info:<br></b>If you have n slides each number key k > n will
-          scroll to page n instead of k. For example if you have only 4 pages, pressing 5 will bring you to page 4
-          (because 5 doesn't exist).</p>
-      </div>
-      <div class="col s12 margin-top">
-        <h4>Scrolling in long slides or small displays</h4>
-        <p>If the slide is larger than the display area, you either have to trim some fat or bite the bullet and scroll
-          down while presentating... But be careful! if you scroll past the bottom of the slide you will be taken to the
-          next slide.</p>
-      </div>
     </div>
+
+
+    <!--  Creating models -->
+
     <div class="row slide content-slide">
-      <h2 class="heading">Available frameworks / libraries / methods</h2>
-      <table class="striped">
-        <thead>
-          <tr>
-            <th>Framework / Method</th>
-            <th>Description</th>
-            <th>Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> <a href="http://materializecss.com/" target="_blank">Materialize CSS</a></td>
-            <td>Material Design css framework </td>
-            <td>Easy coloring, just add classes like "red" or "green"</td>
-          </tr>
-          <tr>
-            <td><a href="https://design.google.com/icons/" target="_blank">Googles Material-Icons webfont</a></td>
-            <td>Lots of useful UI icons</td>
-            <td>
-              <pre><code class="html">&lt;i class="material-icons">send&lt;/i></code></pre>Result: <i
-                class="material-icons">send</i>
-            </td>
-          </tr>
-          <tr>
-            <td> <a href="https://highlightjs.org/" target="_blank">Highlight.js</a></td>
-            <td>Highlight code snippets</td>
-            <td>each &lt;pre>&lt;code>...&lt;/code>&lt;/pre> gets highlighted automatically. Additionally each code
-              segment inside a paragraph (&lt;p>) gets inline highlighted.</td>
-          </tr>
-          <tr>
-            <td> <a href="https://underscorejs.org/" target="_blank">Underscore.js</a></td>
-            <td>Javascript library with lots of usefull functions</td>
-            <td>
-              <pre><code>// square all numbers in an arrayvar squares = _.map([1, 2, 3], function (num) {
-  return num * num;
-})
- 
-// squares = [1, 4, 6]</code></pre>
-            </td>
-          </tr>
-          <tr>
-            <td class="monospace">scroll(where)</td>
-            <td>Scroll to specified slide</td>
-            <td>
-              <pre><code>// scroll upscroll("up");
- 
-// scroll down
-scroll("down");
- 
-// scroll to slide 3
-scroll(3);</code></pre>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <h3 class="heading indigo-text text-darken-4">Creating models</h3>
+      <div class="col-s12">
+        Model represents as database tables. There are two approach to make a project. One is database first
+        approach and another is code first approach. Model creating is code first approach. Every data type of
+        model is an entity. You can declare variable type, length, auto increment id, foreign key etc.
+        <br>
+        To create a model click new c# class from <strong>Model</strong> folder. A file will be creted in
+        model folder with <strong>.cs</strong> extension. <strong>Example: abc.cs</strong>
+      </div>
     </div>
+
+
+    <!--  Data annotation -->
+
+    <div class="row slide content-slide">
+        <div class="col s12">
+          <h3 class="heading indigo-text text-darken-4">Data annotation</h3>
+        </div>
+        <div class="col s12">
+          <h5 class="orange-text text-darken-3">What is Data Annotation?</h5>
+          <p> Data annotations are nothing but certain validations that we put in our models to validate the input from
+              the user. ASP.NET MVC provides a unique feature in which we can validate the models using Data annotation
+              attribute. Import the following namespace to use data annotation in the application.
+              <code>System.ComponentModel.DataAnnotations</code> It is very easy to use and the code becomes much cleaner as compared to normal ASP.NET validators.<br>
+          </p>
+          <h5 class="orange-text text-darken-3">Types of data annotation</h5>
+          <p></p>
+        </div>
+      </div>
+  
+
+
+
+
+
+
+
+
     <div class="slide content-slide">
       <h2 class="heading">"Settings"</h2>
       <p>In the JS file you will find a settings section. You can easily set the following parameters:</p>
