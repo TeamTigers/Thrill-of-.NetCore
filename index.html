@@ -277,6 +277,14 @@
         <h5 class="orange-text text-darken-3">Why Scaffold?</h5>
         <p>Use the scaffolding tool to produce Create, Read, Update and Delete (CRUD) pages.</p><br>
         <h5 class="orange-text text-darken-3">Scaffold code and parameters</h5>
+        <p>
+            <code>dotnet aspnet-codegenerator controller -name MoviesController -m Movie -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries</code>
+        </p>
+        You need to run this command for every <strong>Model</strong> of your project and every time you need to 
+        change model name and controller name from the command line. It can be a pain if you have multiple models.
+        You can use this <a href="https://zubayerhimel.github.io/dotnet-scaffold/index.html">Link</a> to generate 
+        scaffold command.
+        
         <table class="code-table centered">
           <thead>
             <tr>
@@ -317,7 +325,7 @@
           After successful scaffolding you need EF Core Migration to create database. Migration is a set of 
           tools that let you create and update a database to match your data model. For migration use the 
           following commands - <code>dotnet ef migrations add InitialCreate</code>  <code>dotnet ef database update</code>
-          
+
           </p>
       </div>
     </div>
