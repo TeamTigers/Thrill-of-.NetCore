@@ -7,7 +7,7 @@ var keysForDown = "pagedown enter return down right space",
 // keys to press to scroll to previous slide (seperated by spaces)
 keysForUp = "pageup up left backspace",
 // pixels you can scroll "beyond" a slide before you trigger the animation to the next one
-scrollMargin = 20,
+scrollMargin = 5,
 // when the last slide is reached, warp around to the first one
 wrap = false,
 // page scroll animation time
