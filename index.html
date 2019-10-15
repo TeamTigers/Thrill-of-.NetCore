@@ -230,7 +230,8 @@
               </tr>
               <tr>
                 <td class="red-text">StringLength</td>
-                <td class="teal-text">Using this attribute we can specify maximum and minimum length of the property.</td>
+                <td class="teal-text">Using this attribute we can specify maximum and minimum length of the property.
+                </td>
                 <td class="brown-text">[StringLength(30,ErrorMessage="Do not enter more than 30 characters")]</td>
               </tr>
               <tr>
@@ -250,13 +251,15 @@
               </tr>
               <tr>
                 <td class="red-text">DisplayFormat</td>
-                <td class="teal-text">This attribute allows us to set date in the format specified as per the attribute.</td>
+                <td class="teal-text">This attribute allows us to set date in the format specified as per the attribute.
+                </td>
                 <td class="brown-text">[DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}")]</td>
               </tr>
               <tr>
                 <td class="red-text">RegularExpression</td>
                 <td class="teal-text">We can set a regex pattern for the property. For ex: Email ID.</td>
-                <td class="brown-text">[RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]</td>
+                <td class="brown-text">[RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$",
+                  ErrorMessage = "Email is not valid.")]</td>
               </tr>
             </tbody>
           </table>
@@ -278,13 +281,13 @@
         <p>Use the scaffolding tool to produce Create, Read, Update and Delete (CRUD) pages.</p><br>
         <h5 class="orange-text text-darken-3">Scaffold code and parameters</h5>
         <p>
-            <code>dotnet aspnet-codegenerator controller -name MoviesController -m Movie -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries</code>
+          <code>dotnet aspnet-codegenerator controller -name MoviesController -m Movie -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries</code>
         </p>
-        You need to run this command for every <strong>Model</strong> of your project and every time you need to 
+        You need to run this command for every <strong>Model</strong> of your project and every time you need to
         change model name and controller name from the command line. It can be a pain if you have multiple models.
-        You can use this <a href="https://zubayerhimel.github.io/dotnet-scaffold/index.html">Link</a> to generate 
+        You can use this <a href="https://zubayerhimel.github.io/dotnet-scaffold/index.html">Link</a> to generate
         scaffold command.
-        
+
         <table class="code-table centered">
           <thead>
             <tr>
@@ -322,16 +325,31 @@
         <br>
         <h5 class="orange-text text-darken-3">Database Migration</h5>
         <p>
-          After successful scaffolding you need EF Core Migration to create database. Migration is a set of 
-          tools that let you create and update a database to match your data model. For migration use the 
-          following commands - <code>dotnet ef migrations add InitialCreate</code>  <code>dotnet ef database update</code>
-
-          </p>
+          After successful scaffolding you need EF Core Migration to create database. Migration is a set of
+          tools that let you create and update a database to match your data model. For migration use the
+          following commands - <code>dotnet ef migrations add InitialCreate</code>
+          <code>dotnet ef database update</code>
+          <br>
+          <ul>
+            <li>
+              <p><strong>ef migrations add InitialCreate: </strong>Generates an Migrations/{timestamp}_InitialCreate.cs
+                migration file. The InitialCreate argument is the migration name. Any name can be used, but by
+                convention, a name is selected that describes the migration. Because this is the first migration, the
+                generated class contains code to create the database schema. The database schema is based on the model
+                specified in the MvcMovieContext class (in the Data/MvcMovieContext.cs file).</p>
+            </li>
+            <li>
+              <p><strong>ef database update:</strong></p> Updates the database to the latest migration, which the
+              previous command created. This command runs the Up method in the Migrations/{time-stamp}_InitialCreate.cs
+              file, which creates the database.
+            </li>
+          </ul>
+        </p>
       </div>
     </div>
 
-    
-    
+
+
   </div>
   <div class="fixed-action-btn up-btn"><a class="btn-floating btn-large amber waves-effect"><i
         class="material-icons large">keyboard_arrow_up</i></a></div>
